@@ -44,10 +44,8 @@ svg.select('circle')
 svg.select("#fifty")
      .transition()
      .duration(400)
-     .attr("y", yscale(myapp.score1-3))
-     .attr("x", xscale(myapp.score2))
-     .style('fill', 'red')
      .style('font-weight', 'bold')
+     .style("fill", d3.rgb(myapp.score7, myapp.score8, myapp.score9));
      .text(String(myapp.name));
                 };
             };
