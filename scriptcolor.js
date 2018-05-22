@@ -37,7 +37,7 @@ svg.append('rect')
     .style("fill", d3.rgb(myapp.score4, myapp.score5, myapp.score6));
 svg.append("text")
       .attr("id", "fifty")
-      .attr("x", w)
+      .attr("x", w/2)
       .attr("y", h/2)
       .style("text-anchor", "middle")
       .text(" ");
