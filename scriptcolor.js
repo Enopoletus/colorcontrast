@@ -1,4 +1,5 @@
 const myapp={};
+window.addEventListener("load", n8ne);
 window.addEventListener("input", n8ne);
 function n8ne(){
 document.getElementById("count1").innerHTML=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
