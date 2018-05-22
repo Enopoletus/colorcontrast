@@ -13,9 +13,19 @@ document.getElementById("count6").value=myapp.score6=parseInt(document.getElemen
 document.getElementById("count7").value=myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
 document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
-document.getElementById("count33").innerHTML=Number(((myapp.score9+myapp.score8+myapp.score7)/3).toFixed(1));
-document.getElementById("count32").innerHTML=Number(((myapp.score6+myapp.score5+myapp.score4)/3).toFixed(1));
-document.getElementById("count31").innerHTML=Number(((myapp.score3+myapp.score2+myapp.score1)/3).toFixed(1));
+        //yeah I know
+myapp.score1=document.getElementById("count1").value;
+myapp.score2=document.getElementById("count2").value;
+myapp.score3=document.getElementById("count3").value;
+myapp.score4=document.getElementById("count4").value;
+myapp.score5=document.getElementById("count5").value;
+myapp.score6=document.getElementById("count6").value;
+myapp.score7=document.getElementById("count7").value;
+myapp.score8=document.getElementById("count8").value;
+myapp.score9=document.getElementById("count9").value;
+document.getElementById("count33").value=Number(((myapp.score9+myapp.score8+myapp.score7)/3).toFixed(1));
+document.getElementById("count32").value=Number(((myapp.score6+myapp.score5+myapp.score4)/3).toFixed(1));
+document.getElementById("count31").value=Number(((myapp.score3+myapp.score2+myapp.score1)/3).toFixed(1));
 };
 window.addEventListener("load", handler);
 function handler() {
