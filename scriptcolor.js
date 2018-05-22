@@ -37,8 +37,8 @@ svg.append('rect')
     .style("fill", d3.rgb(myapp.score4, myapp.score5, myapp.score6));
 svg.append("text")
       .attr("id", "fifty")
-      .attr("y", w)
-      .attr("x", h/4)
+      .attr("x", w)
+      .attr("y", h/2)
       .style("text-anchor", "middle")
       .text(" ");
 window.addEventListener("click", frame);
@@ -53,8 +53,8 @@ svg.select("#fifty")
      .duration(400)
      .style('font-weight', 'bold')
      .style("fill", d3.rgb(myapp.score7, myapp.score8, myapp.score9))
-     .attr("y", w)
-     .attr("x", h/4)
+     .attr("x", w)
+     .attr("y", h/2)
      .text(String(myapp.name));
                 };
             };
