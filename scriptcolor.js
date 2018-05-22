@@ -46,11 +46,15 @@ window.addEventListener("keyup", frame);
 function frame(){
 svg.select("#rect1")                
      .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
+svg.select("#rect2")
+     .style("fill", d3.rgb(myapp.score4, myapp.score5, myapp.score6));
 svg.select("#fifty")
      .transition()
      .duration(400)
      .style('font-weight', 'bold')
      .style("fill", d3.rgb(myapp.score7, myapp.score8, myapp.score9))
+     .attr("y", w/2)
+     .attr("x", h/2)
      .text(String(myapp.name));
                 };
             };
