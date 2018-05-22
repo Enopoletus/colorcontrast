@@ -1,6 +1,7 @@
 const myapp={};
 window.addEventListener("load", n8ne);
 window.addEventListener("input", n8ne);
+window.addEventListener("click", n8ne);
 function n8ne(){
         myapp.name=document.getElementsByName("name1")[0].value;
 document.getElementById("count1").innerHTML=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
@@ -44,6 +45,7 @@ svg.append("text")
       .attr("y", h/2)
       .style("text-anchor", "middle")
       .text(" ");
+window.addEventListener("load", frame);
 window.addEventListener("input", frame);
 function frame(){
 svg.select("#rect1")                
