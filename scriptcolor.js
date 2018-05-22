@@ -26,7 +26,7 @@ const svg = d3.select("#ten11")
 svg.append('rect')
     .attr('x', 0)
     .attr('y', 0)
-    .width((w/2))
-    .height(h)
+    .attr('width', (w/2))
+    .attr('height', h)
     .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
             };
