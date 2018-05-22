@@ -16,7 +16,6 @@ for (let i of Object.values(myapp)){if (isNaN(i)==true){i=50};};
 };
 window.addEventListener("load", handler);
 function handler() {
-if (myapp.name==undefined){myapp.name="You"};
 const w = (screen.width)/2;
 const h = (screen.width)/2;
 const svg = d3.select("#ten11")
@@ -35,7 +34,7 @@ svg.append("text")
       .attr("y", w/2)
       .attr("x", h/2)
       .style("text-anchor", "middle")
-      .text(" ");
+      .text("Lorem ipsum here");
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
