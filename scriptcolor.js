@@ -4,15 +4,6 @@ window.addEventListener("input", n8ne);
 window.addEventListener("click", n8ne);
 function n8ne(){
         myapp.name=document.getElementsByName("name1")[0].value;
-myapp.score1=parseInt(document.getElementById("count1").value);
-myapp.score2=parseInt(document.getElementById("count2").value);
-myapp.score3=parseInt(document.getElementById("count3").value);
-myapp.score4=parseInt(document.getElementById("count4").value);
-myapp.score5=parseInt(document.getElementById("count5").value);
-myapp.score6=parseInt(document.getElementById("count6").value);
-myapp.score7=parseInt(document.getElementById("count7").value);
-myapp.score8=parseInt(document.getElementById("count8").value);
-myapp.score9=parseInt(document.getElementById("count9").value);
 document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
 document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
 document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value);
@@ -23,9 +14,18 @@ document.getElementById("count7").value=myapp.score7=parseInt(document.getElemen
 document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
         //yeah I know
-document.getElementById("count33").value=Number((((myapp.score9/2.55)+(myapp.score8/1.23)+(myapp.score7/1.95))/3).toFixed(1));
-document.getElementById("count32").value=Number((((myapp.score6/2.55)+(myapp.score5/1.23)+(myapp.score4/1.95))/3).toFixed(1));
-document.getElementById("count31").value=Number((((myapp.score3/2.55)+(myapp.score2/1.23)+(myapp.score1/1.95))/3).toFixed(1));
+// document.getElementById("count33").value=Number((((myapp.score9/2.55)+(myapp.score8/1.23)+(myapp.score7/1.95))/3).toFixed(1));
+// document.getElementById("count32").value=Number((((myapp.score6/2.55)+(myapp.score5/1.23)+(myapp.score4/1.95))/3).toFixed(1));
+// document.getElementById("count31").value=Number((((myapp.score3/2.55)+(myapp.score2/1.23)+(myapp.score1/1.95))/3).toFixed(1));
+document.getElementById("sRGB3").value=Number((((7.22*myapp.score9/255)+(71.52*myapp.score8/255)+(21.26*myapp.score7/255))/3).toFixed(1));
+document.getElementById("sRGB2").value=Number((((7.22*myapp.score6/255)+(71.52*myapp.score5/255)+(21.26*myapp.score4/255))/3).toFixed(1));
+document.getElementById("sRGB1").value=Number((((7.22*myapp.score3/2.55)+(71.52*myapp.score2/1.23)+(21.26*myapp.score1/1.95))/3).toFixed(1));
+document.getElementById("WC33").value=Number((((11.4*myapp.score9/255)+(58.7*myapp.score8/255)+(29.9*myapp.score7/255))/3).toFixed(1));
+document.getElementById("WC32").value=Number((((11.4*myapp.score6/255)+(58.7*myapp.score5/255)+(29.9*myapp.score4/255))/3).toFixed(1));
+document.getElementById("WC31").value=Number((((11.4*myapp.score3/255)+(58.7*myapp.score2/255)+(29.9*myapp.score1/255))/3).toFixed(1));
+document.getElementById("gmean3").value=Number((Math.sqrt((11.4*myapp.score9/255)**2+(58.7*myapp.score8/255)**2+(myapp.score7/255)**2)/3).toFixed(1));
+document.getElementById("gmean2").value=Number((Math.sqrt((11.4*myapp.score6/255)**2+(58.7*myapp.score5/255)**2+(myapp.score4/255)**2)/3).toFixed(1));
+document.getElementById("gmean1").value=Number((Math.sqrt((11.4*myapp.score3/255)**2+(58.7*myapp.score2/255)**2+(myapp.score1/255)**2)/3).toFixed(1));
 };
 window.addEventListener("load", handler);
 function handler() {
