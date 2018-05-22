@@ -1,7 +1,7 @@
 const myapp={};
 window.addEventListener("input", n8ne);
 function n8ne(){
-myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
+document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
 myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
 myapp.score3=parseInt(document.getElementsByName("score3")[0].value);
 myapp.score4=parseInt(document.getElementsByName("score4")[0].value);
