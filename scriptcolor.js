@@ -17,6 +17,16 @@ document.getElementById("count7").value=myapp.score7=parseInt(document.getElemen
 document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13;
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13;
         //yeah I know
+const x=2.55
+document.getElementById("c0unt1").value=myapp.score1/x;
+document.getElementById("c0unt2").value=myapp.score2/x;
+document.getElementById("c0unt3").value=myapp.score3/x;
+document.getElementById("c0unt4").value=myapp.score4/x;
+document.getElementById("c0unt5").value=myapp.score5/x;
+document.getElementById("c0unt6").value=myapp.score6/x;
+document.getElementById("c0unt7").value=myapp.score7/x;
+document.getElementById("c0unt8").value=myapp.score8/x;
+document.getElementById("c0unt9").value=myapp.score9/x;
 // document.getElementById("count33").value=Number((((myapp.score9/2.55)+(myapp.score8/1.23)+(myapp.score7/1.95))/3).toFixed(1));
 // document.getElementById("count32").value=Number((((myapp.score6/2.55)+(myapp.score5/1.23)+(myapp.score4/1.95))/3).toFixed(1));
 // document.getElementById("count31").value=Number((((myapp.score3/2.55)+(myapp.score2/1.23)+(myapp.score1/1.95))/3).toFixed(1));
