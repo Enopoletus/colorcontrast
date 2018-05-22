@@ -12,6 +12,9 @@ document.getElementById("count6").innerHTML=myapp.score6=parseInt(document.getEl
 document.getElementById("count7").innerHTML=myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
 document.getElementById("count8").innerHTML=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 document.getElementById("count9").innerHTML=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
+document.getElementById("count31").innerHTML=(myapp.score9+myapp.score8+myapp.score7)/3;
+document.getElementById("count32").innerHTML=(myapp.score6+myapp.score5+myapp.score4)/3;
+document.getElementById("count33").innerHTML=(myapp.score3+myapp.score2+myapp.score1)/3;
 };
 window.addEventListener("load", handler);
 function handler() {
