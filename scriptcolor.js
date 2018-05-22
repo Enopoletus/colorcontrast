@@ -19,7 +19,7 @@ const w = (screen.width);
 const h = (screen.width)/2;
 const svg = d3.select("#ten11")
             .append('svg')
-            .attr('width', (w+50))
+            .attr('width', (w))
             .attr('height', h);
 svg.append('rect')
     .attr("id", "rect1")
