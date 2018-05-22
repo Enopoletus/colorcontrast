@@ -33,7 +33,6 @@ document.getElementById("smean3").value=Number((Math.sqrt(72.2*((myapp.score9/25
 document.getElementById("smean2").value=Number((Math.sqrt(72.2*((myapp.score6/255)**2)+715.2*((myapp.score5/255)**2)+212.6*((myapp.score4/255)**2))).toFixed(2));
 document.getElementById("smean1").value=Number((Math.sqrt(72.2*((myapp.score3/255)**2)+715.2*((myapp.score2/255)**2)+212.6*((myapp.score1/255)**2))).toFixed(2));
 };   
-};
 window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width*.95);
