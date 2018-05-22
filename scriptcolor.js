@@ -29,4 +29,28 @@ svg.append('rect')
     .attr('width', (w/2))
     .attr('height', h)
     .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
+svg.append("text")
+      .attr("id", "fifty")
+      .attr("transform", "translate(55, 50)")
+      .attr("y", w/2)
+      .attr("x", h/2)
+      .style("text-anchor", "middle")
+      .text(" ");
+window.addEventListener("click", frame);
+window.addEventListener("keyup", frame);
+function frame(){
+svg.select('circle')                
+    .transition()
+    .duration(400)
+    .attr('cx', yscale(myapp.score2))
+    .attr('cy', xscale(myapp.score1));
+svg.select("#fifty")
+     .transition()
+     .duration(400)
+     .attr("y", yscale(myapp.score1-3))
+     .attr("x", xscale(myapp.score2))
+     .style('fill', 'red')
+     .style('font-weight', 'bold')
+     .text(String(myapp.name));
+                };
             };
