@@ -4,15 +4,18 @@ window.addEventListener("input", n8ne);
 window.addEventListener("click", n8ne);
 function n8ne(){
         myapp.name=document.getElementsByName("name1")[0].value;
-document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
-document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
-document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value);
-document.getElementById("count4").value=myapp.score4=parseInt(document.getElementsByName("score4")[0].value);
-document.getElementById("count5").value=myapp.score5=parseInt(document.getElementsByName("score5")[0].value);
-document.getElementById("count6").value=myapp.score6=parseInt(document.getElementsByName("score6")[0].value);
-document.getElementById("count7").value=myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
-document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
-document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
+        myapp.score11=parseInt(document.getElementsByName("score11")[0].value);
+        myapp.score12=parseInt(document.getElementsByName("score12")[0].value);
+        myapp.score13=parseInt(document.getElementsByName("score13")[0].value);
+document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value)+myapp.score11;
+document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value)+myapp.score11;
+document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value)+myapp.score11;
+document.getElementById("count4").value=myapp.score4=parseInt(document.getElementsByName("score4")[0].value)+myapp.score12;
+document.getElementById("count5").value=myapp.score5=parseInt(document.getElementsByName("score5")[0].value)+myapp.score12;
+document.getElementById("count6").value=myapp.score6=parseInt(document.getElementsByName("score6")[0].value)+myapp.score12;
+document.getElementById("count7").value=myapp.score7=parseInt(document.getElementsByName("score7")[0].value)+myapp.score13;
+document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13;
+document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13;
         //yeah I know
 // document.getElementById("count33").value=Number((((myapp.score9/2.55)+(myapp.score8/1.23)+(myapp.score7/1.95))/3).toFixed(1));
 // document.getElementById("count32").value=Number((((myapp.score6/2.55)+(myapp.score5/1.23)+(myapp.score4/1.95))/3).toFixed(1));
