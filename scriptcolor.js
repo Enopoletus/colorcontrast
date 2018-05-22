@@ -15,8 +15,6 @@ myapp.name=document.getElementsByName("name1")[0].value;
 const x = document.getElementByTagName("input");
 var y = document.getElementByClassName("count");
         x.value = y.value;
-    }
-
 };
 window.addEventListener("load", handler);
 function handler() {
