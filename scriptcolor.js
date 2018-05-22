@@ -1,5 +1,5 @@
 const myapp={};
-window.setInterval(n8ne, 100);
+window.addEventListener("input", n8ne);
 function n8ne(){
 myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
 myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
@@ -43,7 +43,7 @@ svg.append("text")
       .attr("y", h/2)
       .style("text-anchor", "middle")
       .text(" ");
-window.setInterval(frame, 100);
+window.addEventListener("input", frame);
 function frame(){
 svg.select("#rect1")                
      .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
