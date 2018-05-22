@@ -12,7 +12,7 @@ myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
 myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
 myapp.name=document.getElementsByName("name1")[0].value;
-for (let i of Object.values(myapp)){if (isNaN(i)==true){i=50};};
+for (i=0; i<Object.values(myapp).length; i++){if (isNaN(Object.values(myapp)[i])==true){i=50};};
 };
 window.addEventListener("load", handler);
 function handler() {
