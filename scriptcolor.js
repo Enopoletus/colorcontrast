@@ -23,9 +23,9 @@ document.getElementById("count7").value=myapp.score7=parseInt(document.getElemen
 document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
         //yeah I know
-document.getElementById("count33").value=Number(((myapp.score9+myapp.score8+myapp.score7)/3).toFixed(1));
-document.getElementById("count32").value=Number(((myapp.score6+myapp.score5+myapp.score4)/3).toFixed(1));
-document.getElementById("count31").value=Number(((myapp.score3+myapp.score2+myapp.score1)/3).toFixed(1));
+document.getElementById("count33").value=Number((Math.sqrt((myapp.score9/255)**2+(myapp.score8/123)**2+(myapp.score7/204)**2)/3).toFixed(1));
+document.getElementById("count32").value=Number((Math.sqrt((myapp.score6/255)**2+(myapp.score5/123)**2+(myapp.score4/204)**2)/3).toFixed(1));
+document.getElementById("count31").value=Number((Math.sqrt((myapp.score3/255)**2+(myapp.score2/123)**2+(myapp.score1/204)**2)/3).toFixed(1));
 };
 window.addEventListener("load", handler);
 function handler() {
