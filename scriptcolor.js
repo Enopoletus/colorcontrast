@@ -12,7 +12,7 @@ myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
 myapp.name=document.getElementsByName("name1")[0].value;
 const x = document.getElementsByTagName("input");
-var y = document.getElementByClassName("count");
+var y = document.getElementsByClassName("count");
         x.value = y.value;
 };
 window.addEventListener("load", handler);
