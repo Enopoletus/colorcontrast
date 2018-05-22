@@ -19,7 +19,7 @@ document.getElementById("count31").innerHTML=Number(((myapp.score3+myapp.score2+
 const inputs = document.getElementsByTagName('input');
 for(let i of inputs) {
     if(i.type.toLowerCase() == 'text') {
-        i.style.width = 3;
+        i.style.size = "4";
     }
 };
 };
