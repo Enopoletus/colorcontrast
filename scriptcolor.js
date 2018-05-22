@@ -40,10 +40,7 @@ window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
 svg.select('circle')                
-    .transition()
-    .duration(400)
-    .attr('cx', yscale(myapp.score2))
-    .attr('cy', xscale(myapp.score1));
+     .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
 svg.select("#fifty")
      .transition()
      .duration(400)
