@@ -53,7 +53,7 @@ svg.select("#fifty")
      .duration(400)
      .style('font-weight', 'bold')
      .style("fill", d3.rgb(myapp.score7, myapp.score8, myapp.score9))
-     .attr("x", w)
+     .attr("x", w/2)
      .attr("y", h/2)
      .text(String(myapp.name));
                 };
