@@ -1,15 +1,15 @@
 const myapp={};
 window.addEventListener("input", n8ne);
 function n8ne(){
-document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
-myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
-myapp.score3=parseInt(document.getElementsByName("score3")[0].value);
-myapp.score4=parseInt(document.getElementsByName("score4")[0].value);
-myapp.score5=parseInt(document.getElementsByName("score5")[0].value);
-myapp.score6=parseInt(document.getElementsByName("score6")[0].value);
-myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
-myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
-myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
+document.getElementById("count1").innerHTML=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
+document.getElementById("count2").innerHTML=myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
+document.getElementById("count3").innerHTML=myapp.score3=parseInt(document.getElementsByName("score3")[0].value);
+document.getElementById("count4").innerHTML=myapp.score4=parseInt(document.getElementsByName("score4")[0].value);
+document.getElementById("count5").innerHTML=myapp.score5=parseInt(document.getElementsByName("score5")[0].value);
+document.getElementById("count6").innerHTML=myapp.score6=parseInt(document.getElementsByName("score6")[0].value);
+document.getElementById("count7").innerHTML=myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
+document.getElementById("count8").innerHTML=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
+document.getElementById("count9").innerHTML=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
 myapp.name=document.getElementsByName("name1")[0].value;
 const x = document.getElementsByTagName("input");
 var y = document.getElementsByClassName("count");
