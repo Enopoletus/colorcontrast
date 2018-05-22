@@ -27,5 +27,6 @@ svg.append('rect')
     .attr('x', 0)
     .attr('y', 0)
     .width((w/2))
-    .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3);
+    .height(h)
+    .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
             };
