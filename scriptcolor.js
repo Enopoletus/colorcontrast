@@ -12,11 +12,11 @@ myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
 myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
 myapp.name=document.getElementsByName("name1")[0].value;
-for (let i of myapp){if (isNaN(i)==true){i=50};};
-if (myapp.name==undefined){myapp.name="You"};
 };
 window.addEventListener("load", handler);
 function handler() {
+for (let i of myapp){if (isNaN(i)==true){i=50};};
+if (myapp.name==undefined){myapp.name="You"};
 const w = (screen.width)/2;
 const h = (screen.width)/2;
 const svg = d3.select("#ten11")
