@@ -17,8 +17,8 @@ var y = document.getElementsByClassName("count");
 };
 window.addEventListener("load", handler);
 function handler() {
-const w = (screen.width*.9);
-const h = (screen.width)/2;
+const w = (screen.width*.95);
+const h = (screen.width)/4;
 const svg = d3.select("#ten11")
             .append('svg')
             .attr('width', (w))
