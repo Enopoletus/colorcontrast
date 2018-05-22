@@ -1,7 +1,5 @@
 const myapp={};
-window.addEventListener("click", n8ne);
-window.addEventListener("keyup", n8ne);
-window.addEventListener("drag", n8ne);
+window.setInterval(n8ne, 50);
 function n8ne(){
 myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
 myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
@@ -13,7 +11,7 @@ myapp.score7=parseInt(document.getElementsByName("score7")[0].value);
 myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
 myapp.name=document.getElementsByName("name1")[0].value;
-const x = document.getElementByTagName("input");
+const x = document.getElementsByTagName("input");
 var y = document.getElementByClassName("count");
         x.value = y.value;
 };
