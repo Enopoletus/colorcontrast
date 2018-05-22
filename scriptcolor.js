@@ -1,6 +1,7 @@
 const myapp={};
 window.addEventListener("click", n8ne);
 window.addEventListener("keyup", n8ne);
+window.addEventListener("drag", n8ne);
 function n8ne(){
 myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
 myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
