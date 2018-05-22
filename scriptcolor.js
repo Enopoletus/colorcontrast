@@ -47,7 +47,7 @@ svg.append("text")
       .text(" ");
 window.addEventListener("load", frame);
 window.addEventListener("input", frame);
-window.addEventListener("click", n8ne);
+window.addEventListener("click", frame);
 function frame(){
 svg.select("#rect1")                
      .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
