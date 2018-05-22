@@ -4,6 +4,15 @@ window.addEventListener("input", n8ne);
 window.addEventListener("click", n8ne);
 function n8ne(){
         myapp.name=document.getElementsByName("name1")[0].value;
+myapp.score1=parseInt(document.getElementById("count1").value);
+myapp.score2=parseInt(document.getElementById("count2").value);
+myapp.score3=parseInt(document.getElementById("count3").value);
+myapp.score4=parseInt(document.getElementById("count4").value);
+myapp.score5=parseInt(document.getElementById("count5").value);
+myapp.score6=parseInt(document.getElementById("count6").value);
+myapp.score7=parseInt(document.getElementById("count7").value);
+myapp.score8=parseInt(document.getElementById("count8").value);
+myapp.score9=parseInt(document.getElementById("count9").value);
 document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value);
 document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value);
 document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value);
@@ -14,15 +23,6 @@ document.getElementById("count7").value=myapp.score7=parseInt(document.getElemen
 document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value);
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value);
         //yeah I know
-myapp.score1=document.getElementById("count1").value;
-myapp.score2=document.getElementById("count2").value;
-myapp.score3=document.getElementById("count3").value;
-myapp.score4=document.getElementById("count4").value;
-myapp.score5=document.getElementById("count5").value;
-myapp.score6=document.getElementById("count6").value;
-myapp.score7=document.getElementById("count7").value;
-myapp.score8=document.getElementById("count8").value;
-myapp.score9=document.getElementById("count9").value;
 document.getElementById("count33").value=Number(((myapp.score9+myapp.score8+myapp.score7)/3).toFixed(1));
 document.getElementById("count32").value=Number(((myapp.score6+myapp.score5+myapp.score4)/3).toFixed(1));
 document.getElementById("count31").value=Number(((myapp.score3+myapp.score2+myapp.score1)/3).toFixed(1));
