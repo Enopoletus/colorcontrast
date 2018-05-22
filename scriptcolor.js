@@ -24,6 +24,7 @@ const svg = d3.select("#ten11")
             .attr('width', (w+50))
             .attr('height', h);
 svg.append('rect')
+    .attr("id", "rect1")
     .attr('x', 0)
     .attr('y', 0)
     .attr('width', (w/2))
@@ -39,7 +40,7 @@ svg.append("text")
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
-svg.select('circle')                
+svg.select("#rect1")                
      .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
 svg.select("#fifty")
      .transition()
