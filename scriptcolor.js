@@ -1,4 +1,4 @@
-const myapp=[];
+const myapp={};
 window.addEventListener("click", n8ne);
 window.addEventListener("keyup", n8ne);
 function n8ne(){
@@ -15,7 +15,7 @@ myapp.name=document.getElementsByName("name1")[0].value;
 };
 window.addEventListener("load", handler);
 function handler() {
-for (let i of myapp){if (isNaN(i)==true){i=50};};
+for (let i of Object.values(myapp)){if (isNaN(i)==true){i=50};};
 if (myapp.name==undefined){myapp.name="You"};
 const w = (screen.width)/2;
 const h = (screen.width)/2;
