@@ -1,4 +1,4 @@
-const myapp={};
+const myapp=[];
 window.addEventListener("click", n8ne);
 window.addEventListener("keyup", n8ne);
 function n8ne(){
