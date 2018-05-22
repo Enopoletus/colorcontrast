@@ -17,15 +17,15 @@ document.getElementById("count9").value=myapp.score9=parseInt(document.getElemen
 // document.getElementById("count33").value=Number((((myapp.score9/2.55)+(myapp.score8/1.23)+(myapp.score7/1.95))/3).toFixed(1));
 // document.getElementById("count32").value=Number((((myapp.score6/2.55)+(myapp.score5/1.23)+(myapp.score4/1.95))/3).toFixed(1));
 // document.getElementById("count31").value=Number((((myapp.score3/2.55)+(myapp.score2/1.23)+(myapp.score1/1.95))/3).toFixed(1));
-document.getElementById("sRGB3").value=Number((((7.22*myapp.score9/255)+(71.52*myapp.score8/255)+(21.26*myapp.score7/255))/3).toFixed(1));
-document.getElementById("sRGB2").value=Number((((7.22*myapp.score6/255)+(71.52*myapp.score5/255)+(21.26*myapp.score4/255))/3).toFixed(1));
-document.getElementById("sRGB1").value=Number((((7.22*myapp.score3/2.55)+(71.52*myapp.score2/1.23)+(21.26*myapp.score1/1.95))/3).toFixed(1));
+document.getElementById("sRGB3").value=Number((((7.22*myapp.score9/255)+(71.52*myapp.score8/255)+(21.26*myapp.score7/255))).toFixed(1));
+document.getElementById("sRGB2").value=Number((((7.22*myapp.score6/255)+(71.52*myapp.score5/255)+(21.26*myapp.score4/255))).toFixed(1));
+document.getElementById("sRGB1").value=Number((((7.22*myapp.score3/255)+(71.52*myapp.score2/255)+(21.26*myapp.score1/255))).toFixed(1));
 document.getElementById("WC33").value=Number((((11.4*myapp.score9/255)+(58.7*myapp.score8/255)+(29.9*myapp.score7/255))/3).toFixed(1));
 document.getElementById("WC32").value=Number((((11.4*myapp.score6/255)+(58.7*myapp.score5/255)+(29.9*myapp.score4/255))/3).toFixed(1));
 document.getElementById("WC31").value=Number((((11.4*myapp.score3/255)+(58.7*myapp.score2/255)+(29.9*myapp.score1/255))/3).toFixed(1));
-document.getElementById("gmean3").value=Number((Math.sqrt((11.4*myapp.score9/255)**2+(58.7*myapp.score8/255)**2+(myapp.score7/255)**2)/3).toFixed(1));
-document.getElementById("gmean2").value=Number((Math.sqrt((11.4*myapp.score6/255)**2+(58.7*myapp.score5/255)**2+(myapp.score4/255)**2)/3).toFixed(1));
-document.getElementById("gmean1").value=Number((Math.sqrt((11.4*myapp.score3/255)**2+(58.7*myapp.score2/255)**2+(myapp.score1/255)**2)/3).toFixed(1));
+document.getElementById("gmean3").value=Number((Math.sqrt((11.4*myapp.score9/255)**2+(58.7*myapp.score8/255)**2+(myapp.score7/255)**2)).toFixed(1));
+document.getElementById("gmean2").value=Number((Math.sqrt((11.4*myapp.score6/255)**2+(58.7*myapp.score5/255)**2+(myapp.score4/255)**2)).toFixed(1));
+document.getElementById("gmean1").value=Number((Math.sqrt((11.4*myapp.score3/255)**2+(58.7*myapp.score2/255)**2+(myapp.score1/255)**2)).toFixed(1));
 };
 window.addEventListener("load", handler);
 function handler() {
