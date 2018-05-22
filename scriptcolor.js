@@ -28,6 +28,13 @@ svg.append('rect')
     .attr('width', (w/2))
     .attr('height', h)
     .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
+svg.append('rect')
+    .attr("id", "rect2")
+    .attr('x', (w/2))
+    .attr('y', 0)
+    .attr('width', (w/2))
+    .attr('height', h)
+    .style("fill", d3.rgb(myapp.score4, myapp.score5, myapp.score6));
 svg.append("text")
       .attr("id", "fifty")
       .attr("y", w/2)
