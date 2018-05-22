@@ -17,9 +17,9 @@ document.getElementById("count33").innerHTML=Number(((myapp.score9+myapp.score8+
 document.getElementById("count32").innerHTML=Number(((myapp.score6+myapp.score5+myapp.score4)/3).toFixed(1));
 document.getElementById("count31").innerHTML=Number(((myapp.score3+myapp.score2+myapp.score1)/3).toFixed(1));
 const inputs = document.getElementsByTagName('input');
-for(let i of inputs) {
-    if(i.type.toLowerCase() == 'text') {
-        i.style.size = "4";
+for(i=0; i<inputs.length; i++) {
+    if(inputs[i].type.toLowerCase() == 'text') {
+        inputs[i].style.size = "4";
     }
 };
 };
