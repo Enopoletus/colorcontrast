@@ -33,7 +33,7 @@ svg.append("text")
       .attr("y", w/2)
       .attr("x", h/2)
       .style("text-anchor", "middle")
-      .text("Lorem ipsum here");
+      .text(" ");
 window.addEventListener("click", frame);
 window.addEventListener("keyup", frame);
 function frame(){
