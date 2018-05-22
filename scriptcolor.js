@@ -23,15 +23,15 @@ document.getElementById("count9").value=myapp.score9=parseInt(document.getElemen
 document.getElementById("sRGB3").value=Number((((7.22*myapp.score9/255)+(71.52*myapp.score8/255)+(21.26*myapp.score7/255))).toFixed(1));
 document.getElementById("sRGB2").value=Number((((7.22*myapp.score6/255)+(71.52*myapp.score5/255)+(21.26*myapp.score4/255))).toFixed(1));
 document.getElementById("sRGB1").value=Number((((7.22*myapp.score3/255)+(71.52*myapp.score2/255)+(21.26*myapp.score1/255))).toFixed(1));
-document.getElementById("WC33").value=Number((((11.4*myapp.score9/255)+(58.7*myapp.score8/255)+(29.9*myapp.score7/255))).toFixed(1));
-document.getElementById("WC32").value=Number((((11.4*myapp.score6/255)+(58.7*myapp.score5/255)+(29.9*myapp.score4/255))).toFixed(1));
-document.getElementById("WC31").value=Number((((11.4*myapp.score3/255)+(58.7*myapp.score2/255)+(29.9*myapp.score1/255))).toFixed(1));
+document.getElementById("WC33").value=Number((((114*myapp.score9/255)+(587*myapp.score8/255)+(299*myapp.score7/255))).toFixed(1));
+document.getElementById("WC32").value=Number((((114*myapp.score6/255)+(587*myapp.score5/255)+(299*myapp.score4/255))).toFixed(1));
+document.getElementById("WC31").value=Number((((114*myapp.score3/255)+(587*myapp.score2/255)+(299*myapp.score1/255))).toFixed(1));
 document.getElementById("gmean3").value=Number((Math.sqrt(114*((myapp.score9/255)**2)+587*((myapp.score8/255)**2)+299*((myapp.score7/255)**2))).toFixed(2));
 document.getElementById("gmean2").value=Number((Math.sqrt(114*((myapp.score6/255)**2)+587*((myapp.score5/255)**2)+299*((myapp.score4/255)**2))).toFixed(2));
 document.getElementById("gmean1").value=Number((Math.sqrt(114*((myapp.score3/255)**2)+587*((myapp.score2/255)**2)+299*((myapp.score1/255)**2))).toFixed(2));
-document.getElementById("smean3").value=Number((Math.sqrt(72.2*((myapp.score9/255)**2)+715.2*((myapp.score8/255)**2)+212.6*((myapp.score7/255)**2))).toFixed(2));
-document.getElementById("smean2").value=Number((Math.sqrt(72.2*((myapp.score6/255)**2)+715.2*((myapp.score5/255)**2)+212.6*((myapp.score4/255)**2))).toFixed(2));
-document.getElementById("smean1").value=Number((Math.sqrt(72.2*((myapp.score3/255)**2)+715.2*((myapp.score2/255)**2)+212.6*((myapp.score1/255)**2))).toFixed(2));
+document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255)**2)+7152*((myapp.score8/255)**2)+2126*((myapp.score7/255)**2))).toFixed(2));
+document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(2));
+document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(2));
 };   
 window.addEventListener("load", handler);
 function handler() {
