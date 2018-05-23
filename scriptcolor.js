@@ -27,9 +27,6 @@ document.getElementById("c0unt6").value=myapp.score6/x;
 document.getElementById("c0unt7").value=myapp.score7/x;
 document.getElementById("c0unt8").value=myapp.score8/x;
 document.getElementById("c0unt9").value=myapp.score9/x;
-document.getElementById("count33").value=Number((Math.sqrt((myapp.score9/2.55)+(myapp.score8/1.23)+(myapp.score7/1.95))).toFixed(1));
-document.getElementById("count32").value=Number((Math.sqrt((myapp.score6/2.55)+(myapp.score5/1.23)+(myapp.score4/1.95))).toFixed(1));
-document.getElementById("count31").value=Number((Math.sqrt((myapp.score3/2.55)+(myapp.score2/1.23)+(myapp.score1/1.95))).toFixed(1));
 document.getElementById("sRGB3").value=Number((((7.22*myapp.score9/255)+(71.52*myapp.score8/255)+(21.26*myapp.score7/255))).toFixed(1));
 document.getElementById("sRGB2").value=Number((((7.22*myapp.score6/255)+(71.52*myapp.score5/255)+(21.26*myapp.score4/255))).toFixed(1));
 document.getElementById("sRGB1").value=Number((((7.22*myapp.score3/255)+(71.52*myapp.score2/255)+(21.26*myapp.score1/255))).toFixed(1));
@@ -42,6 +39,10 @@ document.getElementById("gmean1").value=Number((Math.sqrt(1140*((myapp.score3/25
 document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255)**2)+7152*((myapp.score8/255)**2)+2126*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(1));
+        const a=[[myapp.score1, myapp.score2, myapp.score3],[myapp.score4, myapp.score5, myapp.score6],[myapp.score7, myapp.score8, myapp.score9]];
+        const b=[0,0,0];
+        const c=math.usolve(a, b);
+        console.log(c)
 };   
 window.addEventListener("load", handler);
 function handler() {
