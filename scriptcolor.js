@@ -40,13 +40,15 @@ document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255
 document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(1));
 };
+window.addEventListener("load", n6ne)
+function n6ne(){
 document.getElementById("egalitie").addEventListener("click", n7ne);
 function n7ne(){
         const a=[[myapp.score1, myapp.score2, myapp.score3],[myapp.score4, myapp.score5, myapp.score6],[myapp.score7, myapp.score8, myapp.score9]];
         const b=[0,0,0];
         const c=math.usolve(a, b);
         console.log(c)
-};
+};};
 window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width*.95);
