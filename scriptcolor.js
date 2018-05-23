@@ -44,13 +44,14 @@ window.addEventListener("load", n6ne)
 function n6ne(){
 document.getElementById("egalitie").addEventListener("click", n7ne);
 function n7ne(){
-        const a=[[myapp.score1, myapp.score4, myapp.score7],[myapp.score2, myapp.score5, myapp.score8],[myapp.score3, myapp.score6, myapp.score9]];
-        const vec1=[myapp.score1-myapp.score4, myapp.score2-myapp.score5,myapp.score3-myapp.score6]
-        const vec2=[myapp.score4-myapp.score7,myapp.score5-myapp.score8,myapp.score6-myapp.score9]
-        const b=[0,0,0];
-        const c=math.usolve(a, b);
+        const vec1=[myapp.score1-myapp.score4, myapp.score2-myapp.score5,myapp.score3-myapp.score6];
+        const vec2=[myapp.score4-myapp.score7,myapp.score5-myapp.score8,myapp.score6-myapp.score9];
         const d=math.cross(vec1, vec2)
-        console.log(vec1, vec2, d)
+        const r= math.dot([myapp.score1, myapp.score2, myapp.score3],d);
+        const s= math.dot([myapp.score4, myapp.score5, myapp.score6],d);
+        const t= math.dot([myapp.score7, myapp.score8, myapp.score9],d);
+        console.log(vec1, vec2, d);
+        console.log(r, s, t);
 };};
 window.addEventListener("load", handler);
 function handler() {
