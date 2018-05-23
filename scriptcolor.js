@@ -39,20 +39,14 @@ document.getElementById("gmean1").value=Number((Math.sqrt(1140*((myapp.score3/25
 document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255)**2)+7152*((myapp.score8/255)**2)+2126*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(1));
+
+        myapp.pscore11=parseInt(document.getElementsByName("pscore1")[0].value);
+        myapp.pscore12=parseInt(document.getElementsByName("pscore2")[0].value);
+        myapp.pscore13=parseInt(document.getElementsByName("pscore3")[0].value);
+document.getElementById("ucount3").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score9/255)**2)+(myapp.pscore2*100)*((myapp.score8/255)**2)+(myapp.pscore1*100)*((myapp.score7/255)**2))).toFixed(1));
+document.getElementById("ucount2").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score6/255)**2)+(myapp.pscore2*100)*((myapp.score5/255)**2)+(myapp.pscore1*100)*((myapp.score4/255)**2))).toFixed(1));
+document.getElementById("ucount1").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score3/255)**2)+(myapp.pscore2*100)*((myapp.score2/255)**2)+(myapp.pscore1*100)*((myapp.score1/255)**2))).toFixed(1));
 };
-window.addEventListener("load", n6ne)
-function n6ne(){
-document.getElementById("egalitie").addEventListener("click", n7ne);
-function n7ne(){
-        const vec1=[myapp.score1-myapp.score4, myapp.score2-myapp.score5,myapp.score3-myapp.score6];
-        const vec2=[myapp.score4-myapp.score7,myapp.score5-myapp.score8,myapp.score6-myapp.score9];
-        const d=math.cross(vec1, vec2);
-        const n=math.norm(d);
-        const f=math.divide(d, n);
-        const r= math.dot([myapp.score1, myapp.score2, myapp.score3],d);
-        console.log(vec1, vec2, d, n);
-        console.log(r, f);
-};};
 window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width*.95);
