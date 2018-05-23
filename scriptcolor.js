@@ -44,7 +44,7 @@ window.addEventListener("load", n6ne)
 function n6ne(){
 document.getElementById("egalitie").addEventListener("click", n7ne);
 function n7ne(){
-        const a=[[myapp.score1, myapp.score2, myapp.score3],[myapp.score4, myapp.score5, myapp.score6],[myapp.score7, myapp.score8, myapp.score9]];
+        const a=[[myapp.score1, myapp.score4, myapp.score7],[myapp.score2, myapp.score5, myapp.score8],[myapp.score3, myapp.score6, myapp.score9]];
         const b=[0,0,0];
         const c=math.usolve(a, b);
         console.log(c)
