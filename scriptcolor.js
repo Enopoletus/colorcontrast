@@ -47,7 +47,7 @@ document.getElementById("ucount2").value=Number((Math.sqrt((myapp.pscore3*100)*(
 document.getElementById("ucount1").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score3/255)**2)+(myapp.pscore2*100)*((myapp.score2/255)**2)+(myapp.pscore1*100)*((myapp.score1/255)**2))).toFixed(1));
         myapp.tscore=myapp.pscore1+myapp.pscore2+myapp.pscore3
 if((myapp.tscore==100)==false){
- parseInt(document.getElementsByName("pscore1")[0].value)=myapp.pscore1=(myapp.pscore1-(myapp.tscore-100)/2)};
+ parseInt(document.getElementsByName("pscore1")[0].value)=myapp.pscore1=(myapp.pscore1-(myapp.tscore-100)/2);
  parseInt(document.getElementsByName("pscore2")[0].value)=myapp.pscore2=(myapp.pscore2-(myapp.tscore-100)/2)};
 };
 window.addEventListener("load", handler);
