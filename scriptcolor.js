@@ -48,7 +48,7 @@ function n7ne(){
         const vec2=[myapp.score4-myapp.score7,myapp.score5-myapp.score8,myapp.score6-myapp.score9];
         const d=math.cross(vec1, vec2);
         const n=math.norm(d);
-        const f=d/n
+        const f=math.divide(d, n);
         const r= math.dot([myapp.score1, myapp.score2, myapp.score3],d);
         console.log(vec1, vec2, d, n);
         console.log(r, f);
