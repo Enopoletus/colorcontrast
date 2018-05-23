@@ -46,12 +46,12 @@ document.getElementById("egalitie").addEventListener("click", n7ne);
 function n7ne(){
         const vec1=[myapp.score1-myapp.score4, myapp.score2-myapp.score5,myapp.score3-myapp.score6];
         const vec2=[myapp.score4-myapp.score7,myapp.score5-myapp.score8,myapp.score6-myapp.score9];
-        const d=math.cross(vec1, vec2)
+        const d=math.cross(vec1, vec2);
+        const n=math.norm(d);
+        const f=d/n
         const r= math.dot([myapp.score1, myapp.score2, myapp.score3],d);
-        const s= math.dot([myapp.score4, myapp.score5, myapp.score6],d);
-        const t= math.dot([myapp.score7, myapp.score8, myapp.score9],d);
-        console.log(vec1, vec2, d);
-        console.log(r, s, t);
+        console.log(vec1, vec2, d, n);
+        console.log(r, f);
 };};
 window.addEventListener("load", handler);
 function handler() {
