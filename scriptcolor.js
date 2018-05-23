@@ -40,9 +40,9 @@ document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255
 document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(1));
 
-        myapp.pscore11=parseInt(document.getElementsByName("pscore1")[0].value);
-        myapp.pscore12=parseInt(document.getElementsByName("pscore2")[0].value);
-        myapp.pscore13=parseInt(document.getElementsByName("pscore3")[0].value);
+        myapp.pscore1=parseInt(document.getElementsByName("pscore1")[0].value);
+        myapp.pscore2=parseInt(document.getElementsByName("pscore2")[0].value);
+        myapp.pscore3=parseInt(document.getElementsByName("pscore3")[0].value);
 document.getElementById("ucount3").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score9/255)**2)+(myapp.pscore2*100)*((myapp.score8/255)**2)+(myapp.pscore1*100)*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("ucount2").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score6/255)**2)+(myapp.pscore2*100)*((myapp.score5/255)**2)+(myapp.pscore1*100)*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("ucount1").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score3/255)**2)+(myapp.pscore2*100)*((myapp.score2/255)**2)+(myapp.pscore1*100)*((myapp.score1/255)**2))).toFixed(1));
