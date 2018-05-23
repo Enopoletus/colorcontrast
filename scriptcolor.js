@@ -49,7 +49,8 @@ function n7ne(){
         const vec2=[myapp.score4-myapp.score7,myapp.score5-myapp.score8,myapp.score6-myapp.score9]
         const b=[0,0,0];
         const c=math.usolve(a, b);
-        console.log(a, b, c)
+        const d=math.cross(vec1, vec2)
+        console.log(vec1, vec2, d)
 };};
 window.addEventListener("load", handler);
 function handler() {
