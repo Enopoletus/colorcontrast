@@ -55,9 +55,9 @@ document.getElementById("pscore11").value=myapp.pscore1
 document.getElementById("pscore12").value=myapp.pscore2
 document.getElementById("pscore13").value=myapp.pscore3
         //append equality
- document.getElementsByName("pscore1")[0].value=myapp.pscore1=100*(myapp.pscore1/myapp.tscore);
- document.getElementsByName("pscore2")[0].value=myapp.pscore2=100*(myapp.pscore2/myapp.tscore);
- document.getElementsByName("pscore3")[0].value=myapp.pscore3=100*(myapp.pscore3/myapp.tscore)};
+ document.getElementsByName("pscore1")[0].value=myapp.pscore1=parseFloat(myapp.qy[0]).toFixed(1);
+ document.getElementsByName("pscore2")[0].value=myapp.pscore2=parseFloat(myapp.qy[1]).toFixed(1);
+ document.getElementsByName("pscore3")[0].value=myapp.pscore3=parseFloat(myapp.qy[2]).toFixed(1);
 document.getElementById("pscore11").value=myapp.pscore1
 document.getElementById("pscore12").value=myapp.pscore2
 document.getElementById("pscore13").value=myapp.pscore3
