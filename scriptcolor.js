@@ -65,7 +65,7 @@ function egality(){
                  [1, 1, 1]];
         const aq=[0, 0, 100]
         myapp.qy=math.lusolve(az, aq);
- for(i of myapp.qy){if(i<0){alert('Stop fucking with the equals button; you know as well as I do the three elements are NOT equally bright'); break;} 
+ for(i of myapp.qy){if(i<=0){alert('Stop fucking with the equals button'); break;} 
  else{
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=parseFloat(myapp.qy[0]).toFixed(1);
  document.getElementsByName("pscore2")[0].value=myapp.pscore2=parseFloat(myapp.qy[1]).toFixed(1);
