@@ -53,7 +53,6 @@ if((myapp.tscore==100)==false){
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=(myapp.pscore1-(myapp.tscore-100)/2);
  document.getElementsByName("pscore2")[0].value=myapp.pscore2=(myapp.pscore2-(myapp.tscore-100)/2);
  document.getElementsByName("pscore3")[0].value=myapp.pscore3=(myapp.pscore3-(myapp.tscore-100)/2)};
-       myapp.ts0ore=myapp.pscore1+myapp.pscore2+myapp.pscore3
 };
 window.addEventListener("load", handler);
 function handler() {
