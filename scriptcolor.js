@@ -60,16 +60,11 @@ function n3ne(){
 document.getElementById("egalitie").addEventListener("click", egality);
 function egality(){
         const x=25.5
-        const az=[[((myapp.score1/x)**2)-((myapp.score4/x)**2), ((myapp.score2/x)**2)-((myapp.score5/x)**2), ((myapp.score3/x)**2)-((myapp.score6/x)**2)],
-                 [((myapp.score4/x)**2)-((myapp.score7/x)**2), ((myapp.score5/x)**2)-((myapp.score8/x)**2), ((myapp.score6/x)**2)-((myapp.score9/x)**2)],
-                 [1, 1, 1]];
-        const aq=[0, 0, 100];
-        const qs=math.usolve(az, aq);
         const ca=[[((myapp.score1/x)**2)-((myapp.score4/x)**2), ((myapp.score4/x)**2)-((myapp.score7/x)**2), 1],
                  [((myapp.score2/x)**2)-((myapp.score5/x)**2), ((myapp.score5/x)**2)-((myapp.score8/x)**2), 1],
                  [((myapp.score3/x)**2)-((myapp.score6/x)**2), ((myapp.score6/x)**2)-((myapp.score9/x)**2), 1]];
+        const aq=[0, 0, 100]
         const qx=math.usolve(ca, aq);
-        console.log(az, aq, qs);
         console.log(ca, aq, qx);
 };
 };
