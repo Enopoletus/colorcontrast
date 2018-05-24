@@ -42,9 +42,13 @@ document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255
         myapp.pscore1=parseFloat(document.getElementsByName("pscore1")[0].value);
         myapp.pscore2=parseFloat(document.getElementsByName("pscore2")[0].value);
         myapp.pscore3=parseFloat(document.getElementsByName("pscore3")[0].value);
-document.getElementById("ucount3").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score9/255)**2)+(myapp.pscore2*100)*((myapp.score8/255)**2)+(myapp.pscore1*100)*((myapp.score7/255)**2))).toFixed(1));
+const un=document.getElementById("ucount3").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score9/255)**2)+(myapp.pscore2*100)*((myapp.score8/255)**2)+(myapp.pscore1*100)*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("ucount2").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score6/255)**2)+(myapp.pscore2*100)*((myapp.score5/255)**2)+(myapp.pscore1*100)*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("ucount1").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score3/255)**2)+(myapp.pscore2*100)*((myapp.score2/255)**2)+(myapp.pscore1*100)*((myapp.score1/255)**2))).toFixed(1));
+        const az=[[myapp.score1**2, myapp.score2**2, myapp.score3**2],[myapp.score4**2,myapp.score5**2, myapp.score6**2],[myapp.score7**2,myapp.score8**2,myapp.score9**2]];
+        const aq=[(un*(255/10))**2,(un*(255/10))**2,(un*(255/10))**2];
+        const qs=math.usolve(az, aq);
+        console.log(az, aq, qs);
         myapp.tscore=myapp.pscore1+myapp.pscore2+myapp.pscore3
 if((myapp.tscore==100)==false){
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=100*(myapp.pscore1/myapp.tscore);
