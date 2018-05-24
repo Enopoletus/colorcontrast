@@ -27,7 +27,7 @@
   <p>
     This is a tool made to test <i>percieved</i> brightness of and contrast between different colors.
     The WC3 and sRGB weighings, as well as their weightings being inputed into a weighted Euclidean distance
-    (labeled sRGB.G and W3C.G, respectively), are included for your enlightenment. I have found WC3.G to yield
+    (labeled sRGB.G and W3C.G, respectively), are included for your enlightenment. I have found W3C.G to yield
     the most accurate results. When you feel that all three
     colors displayed in the box are equally bright, click the equals sign to automatically assign your 
     color weightings for you.
@@ -54,9 +54,9 @@
   <div id="ten11"></div>
   </form>
   <br>
-  <input type="text" name="name1" style="width:400px" value="Lorem Ipsum dolores muerta here hysterisis semiperpendicular yada yada">
+  Your text here: <input type="text" name="name1" style="width:400px" value="Lorem Ipsum dolores muerta here hysterisis semiperpendicular yada yada">
   <input type="button" id="egalitie" value=" = "></button>
- <br> Your values for percieved color brightness:<br>
+ <br> Your values for percieved color brightness(weighted Euclidean W3C values default):<br>
   R: <input type="range" min="0" max="100" step="0.1" name="pscore1" value="29.9">
   <input type="text" id="pscore11">
   G: <input type="range" min="0" max="100" step="0.1" name="pscore2" value="58.7">
@@ -104,24 +104,24 @@
   <div class="gridcontainer2">
     <div class="griditem2">
     sRGB:<input type="text" id="sRGB1">
-    WC3: <input type="text" id="WC31"><br>
+    W3C: <input type="text" id="WC31"><br>
     sRGB.G <input type="text" id="smean1">
-    WC3.G: <input type="text" id="gmean1"><br>
+    W3C.G: <input type="text" id="gmean1"><br>
     <b>You:<b> <input type="text" id="ucount1">
   </div>
     <div class="griditem2">
     sRGB:<input type="text" id="sRGB3">
-    WC3: <input type="text" id="WC33"><br>
+    W3C: <input type="text" id="WC33"><br>
     sRGB.G: <input type="text" id="smean3">
-    WC3.G: <input type="text" id="gmean3"><br>
+    W3C.G: <input type="text" id="gmean3"><br>
     Me: <input type="text" id="count33">
     <b>You:</b> <input type="text" id="ucount3">
   </div>
     <div class="griditem2">
     sRGB:<input type="text" id="sRGB2">
-    WC3: <input type="text" id="WC32"><br>
+    W3C: <input type="text" id="WC32"><br>
     sRGB.G: <input type="text" id="smean2">
-    WC3.G: <input type="text" id="gmean2"><br>
+    W3C.G: <input type="text" id="gmean2"><br>
     Me:<input type="text" id="count32">
     <b>You:</b> <input type="text" id="ucount2"><br>
   </div>
