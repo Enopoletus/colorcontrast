@@ -42,9 +42,6 @@ document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255
         myapp.pscore1=parseFloat(document.getElementsByName("pscore1")[0].value);
         myapp.pscore2=parseFloat(document.getElementsByName("pscore2")[0].value);
         myapp.pscore3=parseFloat(document.getElementsByName("pscore3")[0].value);
-document.getElementById("pscore11").value=myapp.pscore1
-document.getElementById("pscore12").value=myapp.pscore2
-document.getElementById("pscore13").value=myapp.pscore3
 document.getElementById("ucount3").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score9/255)**2)+(myapp.pscore2*100)*((myapp.score8/255)**2)+(myapp.pscore1*100)*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("ucount2").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score6/255)**2)+(myapp.pscore2*100)*((myapp.score5/255)**2)+(myapp.pscore1*100)*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("ucount1").value=Number((Math.sqrt((myapp.pscore3*100)*((myapp.score3/255)**2)+(myapp.pscore2*100)*((myapp.score2/255)**2)+(myapp.pscore1*100)*((myapp.score1/255)**2))).toFixed(1));
@@ -53,6 +50,9 @@ if((myapp.tscore==100)==false){
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=(myapp.pscore1-(myapp.tscore-100)/2);
  document.getElementsByName("pscore2")[0].value=myapp.pscore2=(myapp.pscore2-(myapp.tscore-100)/2);
  document.getElementsByName("pscore3")[0].value=myapp.pscore3=(myapp.pscore3-(myapp.tscore-100)/2)};
+document.getElementById("pscore11").value=myapp.pscore1
+document.getElementById("pscore12").value=myapp.pscore2
+document.getElementById("pscore13").value=myapp.pscore3
 };
 window.addEventListener("load", handler);
 function handler() {
