@@ -65,7 +65,13 @@ function egality(){
                  [1, 1, 1]];
         const aq=[0, 0, 100];
         const qs=math.usolve(az, aq);
-        console.log(az, aq, qs);};
+        const ca=[[((myapp.score1/x)**2)-((myapp.score4/x)**2), ((myapp.score4/x)**2)-((myapp.score7/x)**2), 1],
+                 [((myapp.score2/x)**2)-((myapp.score5/x)**2), ((myapp.score5/x)**2)-((myapp.score8/x)**2), 1],
+                 [((myapp.score3/x)**2)-((myapp.score6/x)**2), ((myapp.score6/x)**2)-((myapp.score9/x)**2), 1]];
+        const qx=math.usolve(ca, aq);
+        console.log(az, aq, qs);
+        console.log(ca, aq, qx);
+};
 };
 window.addEventListener("load", handler);
 function handler() {
