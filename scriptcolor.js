@@ -50,7 +50,7 @@ document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp
  if((myapp.tscore==100)==false){
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=100*(myapp.pscore1/myapp.tscore);
  document.getElementsByName("pscore2")[0].value=myapp.pscore2=100*(myapp.pscore2/myapp.tscore);
- document.getElementsByName("pscore3")[0].value=myapp.pscore3=100*(myapp.pscore3/myapp.tscore);
+ document.getElementsByName("pscore3")[0].value=myapp.pscore3=100*(myapp.pscore3/myapp.tscore);};
 document.getElementById("pscore11").value=myapp.pscore1
 document.getElementById("pscore12").value=myapp.pscore2
 document.getElementById("pscore13").value=myapp.pscore3
