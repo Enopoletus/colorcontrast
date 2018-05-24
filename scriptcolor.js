@@ -51,16 +51,9 @@ document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=100*(myapp.pscore1/myapp.tscore);
  document.getElementsByName("pscore2")[0].value=myapp.pscore2=100*(myapp.pscore2/myapp.tscore);
  document.getElementsByName("pscore3")[0].value=myapp.pscore3=100*(myapp.pscore3/myapp.tscore);};
-document.getElementById("pscore11").value=myapp.pscore1
-document.getElementById("pscore12").value=myapp.pscore2
-document.getElementById("pscore13").value=myapp.pscore3
-        //append equality
- document.getElementsByName("pscore1")[0].value=myapp.pscore1=parseFloat(myapp.qy[0]).toFixed(1);
- document.getElementsByName("pscore2")[0].value=myapp.pscore2=parseFloat(myapp.qy[1]).toFixed(1);
- document.getElementsByName("pscore3")[0].value=myapp.pscore3=parseFloat(myapp.qy[2]).toFixed(1);
-document.getElementById("pscore11").value=myapp.pscore1
-document.getElementById("pscore12").value=myapp.pscore2
-document.getElementById("pscore13").value=myapp.pscore3
+document.getElementById("pscore11").value=myapp.pscore1;
+document.getElementById("pscore12").value=myapp.pscore2;
+document.getElementById("pscore13").value=myapp.pscore3;
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
@@ -72,10 +65,16 @@ function egality(){
                  [1, 1, 1]];
         const aq=[0, 0, 100]
         myapp.qy=math.lusolve(az, aq);
+ document.getElementsByName("pscore1")[0].value=myapp.pscore1=parseFloat(myapp.qy[0]).toFixed(1);
+ document.getElementsByName("pscore2")[0].value=myapp.pscore2=parseFloat(myapp.qy[1]).toFixed(1);
+ document.getElementsByName("pscore3")[0].value=myapp.pscore3=parseFloat(myapp.qy[2]).toFixed(1);
+document.getElementById("pscore11").value=myapp.pscore1;
+document.getElementById("pscore12").value=myapp.pscore2;
+document.getElementById("pscore13").value=myapp.pscore3;
 };};
 window.addEventListener("load", handler);
 function handler() {
-const w = (screen.width*.95);
+const w = (screen.width*.9);
 const h = (screen.width)/4;
 const svg = d3.select("#ten11")
             .append('svg')
