@@ -18,6 +18,7 @@ document.getElementById("count8").value=myapp.score8=parseInt(document.getElemen
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13;
         //yeah I know
 const x=2.55
+const y=x*10
 document.getElementById("c0unt1").value=myapp.score1/x;
 document.getElementById("c0unt2").value=myapp.score2/x;
 document.getElementById("c0unt3").value=myapp.score3/x;
@@ -42,9 +43,9 @@ document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255
         myapp.pscore1=parseFloat(document.getElementsByName("pscore1")[0].value);
         myapp.pscore2=parseFloat(document.getElementsByName("pscore2")[0].value);
         myapp.pscore3=parseFloat(document.getElementsByName("pscore3")[0].value);
-document.getElementById("ucount3").value=Number((Math.sqrt(myapp.pscore3*((myapp.score9/x)**2)+myapp.pscore2*((myapp.score8/x)**2)+myapp.pscore1*((myapp.score7/x)**2))).toFixed(1));
-document.getElementById("ucount2").value=Number((Math.sqrt(myapp.pscore3*((myapp.score6/x)**2)+myapp.pscore2*((myapp.score5/x)**2)+myapp.pscore1*((myapp.score4/x)**2))).toFixed(1));
-document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp.score3/x)**2)+myapp.pscore2*((myapp.score2/x)**2)+myapp.pscore1*((myapp.score1/x)**2))).toFixed(1));
+document.getElementById("ucount3").value=Number((Math.sqrt(myapp.pscore3*((myapp.score9/y)**2)+myapp.pscore2*((myapp.score8/y)**2)+myapp.pscore1*((myapp.score7/y)**2))).toFixed(1));
+document.getElementById("ucount2").value=Number((Math.sqrt(myapp.pscore3*((myapp.score6/y)**2)+myapp.pscore2*((myapp.score5/y)**2)+myapp.pscore1*((myapp.score4/y)**2))).toFixed(1));
+document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp.score3/y)**2)+myapp.pscore2*((myapp.score2/y)**2)+myapp.pscore1*((myapp.score1/y)**2))).toFixed(1));
      myapp.tscore=myapp.pscore1+myapp.pscore2+myapp.pscore3
  if((myapp.tscore==100)==false){
  document.getElementsByName("pscore1")[0].value=myapp.pscore1=100*(myapp.pscore1/myapp.tscore);
@@ -58,7 +59,7 @@ window.addEventListener("load", n3ne);
 function n3ne(){
 document.getElementById("egalitie").addEventListener("click", egality);
 function egality(){
-        const x=2.55
+        const x=25.5
         const az=[[((myapp.score1/x)**2)-((myapp.score4/x)**2), ((myapp.score2/x)**2)-((myapp.score5/x)**2), ((myapp.score3/x)**2)-((myapp.score6/x)**2)],
                  [((myapp.score4/x)**2)-((myapp.score7/x)**2), ((myapp.score5/x)**2)-((myapp.score8/x)**2), ((myapp.score6/x)**2)-((myapp.score9/x)**2)],
                  [1, 1, 1]];
