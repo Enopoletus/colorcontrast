@@ -54,6 +54,8 @@ document.getElementById("pscore11").value=myapp.pscore1
 document.getElementById("pscore12").value=myapp.pscore2
 document.getElementById("pscore13").value=myapp.pscore3
 };
+window.addEventListener("load", n3ne);
+function n3ne(){
 document.getElementById("egalitie").addEventListener("click", egality);
 function egality(){
         const az=[[(myapp.score1)**2-(myapp.score3)**2, (myapp.score2)**2-(myapp.score3)**2, -((255/10)**2)],
@@ -62,6 +64,7 @@ function egality(){
         const aq=[-100*((myapp.score3)**2), -100*((myapp.score6)**2), -100*((myapp.score9)**2)];
         const qs=math.usolve(az, aq);
         console.log(az, aq, qs);};
+};
 window.addEventListener("load", handler);
 function handler() {
 const w = (screen.width*.95);
