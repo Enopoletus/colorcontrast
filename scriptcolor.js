@@ -58,10 +58,10 @@ window.addEventListener("load", n3ne);
 function n3ne(){
 document.getElementById("egalitie").addEventListener("click", egality);
 function egality(){
-        const az=[[(myapp.score1)**2-(myapp.score3)**2, (myapp.score2)**2-(myapp.score3)**2, -((255/10)**2)],
-                 [(myapp.score4)**2-(myapp.score6)**2, (myapp.score5)**2-(myapp.score6)**2, -((255/10)**2)],
-                 [(myapp.score7)**2-(myapp.score9)**2, (myapp.score8)**2-(myapp.score9)**2, -((255/10)**2)]];
-        const aq=[-100*((myapp.score3)**2), -100*((myapp.score6)**2), -100*((myapp.score9)**2)];
+        const az=[[((myapp.score1)**2)-((myapp.score4)**2), ((myapp.score2)**2)-((myapp.score5)**2), ((myapp.score3)**2)-((myapp.score6)**2)],
+                 [((myapp.score4)**2)-((myapp.score7)**2), ((myapp.score5)**2)-((myapp.score8)**2), ((myapp.score6)**2)-((myapp.score9)**2)],
+                 [((myapp.score7)**2)-((myapp.score1)**2), ((myapp.score8)**2)-((myapp.score2)**2), ((myapp.score9)**2)-((myapp.score3)**2)]];
+        const aq=[0, 0, 0];
         const qs=math.usolve(az, aq);
         console.log(az, aq, qs);};
 };
