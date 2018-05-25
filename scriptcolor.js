@@ -10,16 +10,15 @@ function n8ne(){
         myapp.score21=parseInt(document.getElementsByName("score21")[0].value);
         myapp.score22=parseInt(document.getElementsByName("score22")[0].value);
         myapp.score23=parseInt(document.getElementsByName("score23")[0].value);
-document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value)+myapp.score11-myapp.score21;
-document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value)+myapp.score11-myapp.score21;
-document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value)+myapp.score11-myapp.score21;
-document.getElementById("count4").value=myapp.score4=parseInt(document.getElementsByName("score4")[0].value)+myapp.score12-myapp.score22;
-document.getElementById("count5").value=myapp.score5=parseInt(document.getElementsByName("score5")[0].value)+myapp.score12-myapp.score22;
-document.getElementById("count6").value=myapp.score6=parseInt(document.getElementsByName("score6")[0].value)+myapp.score12-myapp.score22;
-document.getElementById("count7").value=myapp.score7=parseInt(document.getElementsByName("score7")[0].value)+myapp.score13-myapp.score23;
-document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13-myapp.score23;
-document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13-myapp.score23;
-        //yeah I know
+        myapp.score1=parseInt(document.getElementsByName("score1")[0].value)+myapp.score11-myapp.score21;
+        myapp.score2=parseInt(document.getElementsByName("score2")[0].value)+myapp.score11-myapp.score21;
+        myapp.score3=parseInt(document.getElementsByName("score3")[0].value)+myapp.score11-myapp.score21;
+        myapp.score4=parseInt(document.getElementsByName("score4")[0].value)+myapp.score12-myapp.score22;
+        myapp.score5=parseInt(document.getElementsByName("score5")[0].value)+myapp.score12-myapp.score22;
+        myapp.score6=parseInt(document.getElementsByName("score6")[0].value)+myapp.score12-myapp.score22;
+        myapp.score7=parseInt(document.getElementsByName("score7")[0].value)+myapp.score13-myapp.score23;
+        myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13-myapp.score23;
+        myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13-myapp.score23;
         if(myapp.score1<0){myapp.score1=0};
         if(myapp.score2<0){myapp.score2=0};
         if(myapp.score3<0){myapp.score3=0};
@@ -29,7 +28,26 @@ document.getElementById("count9").value=myapp.score9=parseInt(document.getElemen
         if(myapp.score7<0){myapp.score7=0};
         if(myapp.score8<0){myapp.score8=0};
         if(myapp.score9<0){myapp.score9=0};
-const x=2.55
+        if(myapp.score1>255){myapp.score1=255};
+        if(myapp.score2>255){myapp.score2=255};
+        if(myapp.score3>255){myapp.score3=255};
+        if(myapp.score4>255){myapp.score4=255};
+        if(myapp.score5>255){myapp.score5=255};
+        if(myapp.score6>255){myapp.score6=255};
+        if(myapp.score7>255){myapp.score7=255};
+        if(myapp.score8>255){myapp.score8=255};
+        if(myapp.score9>255){myapp.score9=255};
+document.getElementById("count1").value=myapp.score1;
+document.getElementById("count2").value=myapp.score2;
+document.getElementById("count3").value=myapp.score3;
+document.getElementById("count4").value=myapp.score4;
+document.getElementById("count5").value=myapp.score5;
+document.getElementById("count6").value=myapp.score6;
+document.getElementById("count7").value=myapp.score7;
+document.getElementById("count8").value=myapp.score8;
+document.getElementById("count9").value=myapp.score9;
+        //yeah I know; shoulda used loops earlier
+const x=2.5
 const y=x*10
 document.getElementById("c0unt1").value=myapp.score1/x;
 document.getElementById("c0unt2").value=myapp.score2/x;
