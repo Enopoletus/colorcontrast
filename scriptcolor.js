@@ -7,15 +7,18 @@ function n8ne(){
         myapp.score11=parseInt(document.getElementsByName("score11")[0].value);
         myapp.score12=parseInt(document.getElementsByName("score12")[0].value);
         myapp.score13=parseInt(document.getElementsByName("score13")[0].value);
-document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value)+myapp.score11;
-document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value)+myapp.score11;
-document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value)+myapp.score11;
-document.getElementById("count4").value=myapp.score4=parseInt(document.getElementsByName("score4")[0].value)+myapp.score12;
-document.getElementById("count5").value=myapp.score5=parseInt(document.getElementsByName("score5")[0].value)+myapp.score12;
-document.getElementById("count6").value=myapp.score6=parseInt(document.getElementsByName("score6")[0].value)+myapp.score12;
-document.getElementById("count7").value=myapp.score7=parseInt(document.getElementsByName("score7")[0].value)+myapp.score13;
-document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13;
-document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13;
+        myapp.score21=parseInt(document.getElementsByName("score21")[0].value);
+        myapp.score22=parseInt(document.getElementsByName("score22")[0].value);
+        myapp.score23=parseInt(document.getElementsByName("score23")[0].value);
+document.getElementById("count1").value=myapp.score1=parseInt(document.getElementsByName("score1")[0].value)+myapp.score11-myapp.score21;
+document.getElementById("count2").value=myapp.score2=parseInt(document.getElementsByName("score2")[0].value)+myapp.score11-myapp.score21;
+document.getElementById("count3").value=myapp.score3=parseInt(document.getElementsByName("score3")[0].value)+myapp.score11-myapp.score21;
+document.getElementById("count4").value=myapp.score4=parseInt(document.getElementsByName("score4")[0].value)+myapp.score12-myapp.score22;
+document.getElementById("count5").value=myapp.score5=parseInt(document.getElementsByName("score5")[0].value)+myapp.score12-myapp.score22;
+document.getElementById("count6").value=myapp.score6=parseInt(document.getElementsByName("score6")[0].value)+myapp.score12-myapp.score22;
+document.getElementById("count7").value=myapp.score7=parseInt(document.getElementsByName("score7")[0].value)+myapp.score13-myapp.score23;
+document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13-myapp.score23;
+document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13-myapp.score23;
         //yeah I know
 const x=2.55
 const y=x*10
