@@ -20,6 +20,15 @@ document.getElementById("count7").value=myapp.score7=parseInt(document.getElemen
 document.getElementById("count8").value=myapp.score8=parseInt(document.getElementsByName("score8")[0].value)+myapp.score13-myapp.score23;
 document.getElementById("count9").value=myapp.score9=parseInt(document.getElementsByName("score9")[0].value)+myapp.score13-myapp.score23;
         //yeah I know
+        if(myapp.score1<0){myapp.score1=0};
+        if(myapp.score2<0){myapp.score2=0};
+        if(myapp.score3<0){myapp.score3=0};
+        if(myapp.score4<0){myapp.score4=0};
+        if(myapp.score5<0){myapp.score5=0};
+        if(myapp.score6<0){myapp.score6=0};
+        if(myapp.score7<0){myapp.score7=0};
+        if(myapp.score8<0){myapp.score8=0};
+        if(myapp.score9<0){myapp.score9=0};
 const x=2.55
 const y=x*10
 document.getElementById("c0unt1").value=myapp.score1/x;
