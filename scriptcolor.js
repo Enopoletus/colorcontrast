@@ -93,9 +93,9 @@ document.getElementById("pscore13").value=myapp.pscore3;};
         const dyst1=Math.sqrt(myapp.pscore1*((myapp.score4-myapp.score1)**2)+myapp.pscore2*((myapp.score5-myapp.score2)**2)+myapp.pscore3*((myapp.score6-myapp.score3)**2));
         const dyst2=Math.sqrt(myapp.pscore1*((myapp.score7-myapp.score1)**2)+myapp.pscore2*((myapp.score8-myapp.score2)**2)+myapp.pscore3*((myapp.score9-myapp.score3)**2));
         const dyst3=Math.sqrt(myapp.pscore1*((myapp.score7-myapp.score4)**2)+myapp.pscore2*((myapp.score8-myapp.score5)**2)+myapp.pscore3*((myapp.score9-myapp.score6)**2));
-        document.getElementById("tvly").value=dyst2;
-        document.getElementById("lvry").value=dyst1;
-        document.getElementById("tvry").value=dyst3;
+        document.getElementById("tvly").value=dyst2/y;
+        document.getElementById("lvry").value=dyst1/y;
+        document.getElementById("tvry").value=dyst3/y;
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
