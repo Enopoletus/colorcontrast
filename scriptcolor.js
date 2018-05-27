@@ -70,20 +70,23 @@ document.getElementById("gmean1").value=Number((Math.sqrt(1140*((myapp.score3/25
 document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255)**2)+7152*((myapp.score8/255)**2)+2126*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(1));
-        myapp.pscore1=parseFloat(document.getElementsByName("pscore1")[0].value);
-        myapp.pscore2=parseFloat(document.getElementsByName("pscore2")[0].value);
-        myapp.pscore3=parseFloat(document.getElementsByName("pscore3")[0].value);
 document.getElementById("ucount3").value=Number((Math.sqrt(myapp.pscore3*((myapp.score9/y)**2)+myapp.pscore2*((myapp.score8/y)**2)+myapp.pscore1*((myapp.score7/y)**2))).toFixed(1));
 document.getElementById("ucount2").value=Number((Math.sqrt(myapp.pscore3*((myapp.score6/y)**2)+myapp.pscore2*((myapp.score5/y)**2)+myapp.pscore1*((myapp.score4/y)**2))).toFixed(1));
 document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp.score3/y)**2)+myapp.pscore2*((myapp.score2/y)**2)+myapp.pscore1*((myapp.score1/y)**2))).toFixed(1));
      myapp.tscore=myapp.pscore1+myapp.pscore2+myapp.pscore3
  if((myapp.tscore==100)==false){
- document.getElementsByName("pscore1")[0].value=myapp.pscore1=100*(myapp.pscore1/myapp.tscore);
- document.getElementsByName("pscore2")[0].value=myapp.pscore2=100*(myapp.pscore2/myapp.tscore);
- document.getElementsByName("pscore3")[0].value=myapp.pscore3=100*(myapp.pscore3/myapp.tscore);};
 document.getElementById("pscore11").value=myapp.pscore1;
 document.getElementById("pscore12").value=myapp.pscore2;
 document.getElementById("pscore13").value=myapp.pscore3;
+        const dist1=sqrt((myapp.score4-myapp.score1)**2+(myapp.score5-myapp.score2)**2+(myapp.score6-myapp.score3)**2)
+        const dist2=sqrt((myapp.score7-myapp.score1)**2+(myapp.score8-myapp.score2)**2+(myapp.score9-myapp.score3)**2)
+        const dist3=sqrt((myapp.score7-myapp.score4)**2+(myapp.score8-myapp.score5)**2+(myapp.score9-myapp.score6)**2)
+        const p1=dist1/Math.sqrt((255)**2+(255)**2+(255)**2)
+        const p2=dist2/Math.sqrt((255)**2+(255)**2+(255)**2)
+        const p3=dist3/Math.sqrt((255)**2+(255)**2+(255)**2)
+        document.getElementById("tvl").value=p2
+        document.getElementById("lvr").value=p1
+        document.getElementById("tvr").value=p3
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
