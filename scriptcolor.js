@@ -97,12 +97,12 @@ document.getElementById("pscore13").value=myapp.pscore3;};
         document.getElementById("lvry").value=dyst1/y;
         document.getElementById("tvry").value=dyst3/y;
         const pytu=Math.sqrt((100)**2+(100)**2)
-        document.getElementById("tc1").value=Math.sqrt((myapp.ucount3-myapp.ucount1)**2+(p2)**2)/pytu;
-        document.getElementById("tc2").value=Math.sqrt((myapp.ucount3-myapp.ucount2)**2+(p3)**2)/pytu;
-        document.getElementById("tc3").value=Math.sqrt((myapp.ucount2-myapp.ucount1)**2+(p1)**2)/pytu;
-        document.getElementById("tc1y").value=Math.sqrt((myapp.ucount3-myapp.ucount1)**2+(dyst2/y)**2)/pytu;
-        document.getElementById("tc2y").value=Math.sqrt((myapp.ucount3-myapp.ucount2)**2+(dyst3/y)**2)/pytu;
-        document.getElementById("tc3y").value=Math.sqrt((myapp.ucount2-myapp.ucount1)**2+(dyst1/y)**2)/pytu;
+        document.getElementById("tc1").value=100*Math.sqrt((myapp.ucount3-myapp.ucount1)**2+(p2)**2)/pytu;
+        document.getElementById("tc2").value=100*Math.sqrt((myapp.ucount3-myapp.ucount2)**2+(p3)**2)/pytu;
+        document.getElementById("tc3").value=100*Math.sqrt((myapp.ucount2-myapp.ucount1)**2+(p1)**2)/pytu;
+        document.getElementById("tc1y").value=100*Math.sqrt((myapp.ucount3-myapp.ucount1)**2+(dyst2/y)**2)/pytu;
+        document.getElementById("tc2y").value=100*Math.sqrt((myapp.ucount3-myapp.ucount2)**2+(dyst3/y)**2)/pytu;
+        document.getElementById("tc3y").value=100*Math.sqrt((myapp.ucount2-myapp.ucount1)**2+(dyst1/y)**2)/pytu;
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
