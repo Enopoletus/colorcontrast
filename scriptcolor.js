@@ -47,7 +47,7 @@ document.getElementById("count7").value=myapp.score7;
 document.getElementById("count8").value=myapp.score8;
 document.getElementById("count9").value=myapp.score9;
         //yeah I know; shoulda used loops earlier
-const x=2.5
+const x=2.55
 const y=x*10
 document.getElementById("c0unt1").value=myapp.score1/x;
 document.getElementById("c0unt2").value=myapp.score2/x;
