@@ -96,6 +96,9 @@ document.getElementById("pscore13").value=myapp.pscore3;};
         document.getElementById("tvly").value=dyst2/y;
         document.getElementById("lvry").value=dyst1/y;
         document.getElementById("tvry").value=dyst3/y;
+        document.getElementById("tc1").value=2;
+        document.getElementById("tc2").value=2;
+        document.getElementById("tc3").value=2;
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
