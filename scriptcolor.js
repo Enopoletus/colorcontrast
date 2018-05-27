@@ -3,6 +3,9 @@ window.addEventListener("load", n8ne);
 window.addEventListener("input", n8ne);
 window.addEventListener("click", n8ne);
 function n8ne(){
+        myapp.pscore1=29.9
+        myapp.pscore2=58.7
+        myapp.pscore3=11.4
         myapp.name=document.getElementsByName("name1")[0].value;
         myapp.score11=parseInt(document.getElementsByName("score11")[0].value);
         myapp.score12=parseInt(document.getElementsByName("score12")[0].value);
