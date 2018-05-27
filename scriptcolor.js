@@ -77,7 +77,7 @@ document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp
  if((myapp.tscore==100)==false){
 document.getElementById("pscore11").value=myapp.pscore1;
 document.getElementById("pscore12").value=myapp.pscore2;
-document.getElementById("pscore13").value=myapp.pscore3;
+document.getElementById("pscore13").value=myapp.pscore3;};
         const dist1=sqrt((myapp.score4-myapp.score1)**2+(myapp.score5-myapp.score2)**2+(myapp.score6-myapp.score3)**2)
         const dist2=sqrt((myapp.score7-myapp.score1)**2+(myapp.score8-myapp.score2)**2+(myapp.score9-myapp.score3)**2)
         const dist3=sqrt((myapp.score7-myapp.score4)**2+(myapp.score8-myapp.score5)**2+(myapp.score9-myapp.score6)**2)
