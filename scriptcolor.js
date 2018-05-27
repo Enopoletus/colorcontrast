@@ -73,9 +73,9 @@ document.getElementById("gmean1").value=Number((Math.sqrt(1140*((myapp.score3/25
 document.getElementById("smean3").value=Number((Math.sqrt(722*((myapp.score9/255)**2)+7152*((myapp.score8/255)**2)+2126*((myapp.score7/255)**2))).toFixed(1));
 document.getElementById("smean2").value=Number((Math.sqrt(722*((myapp.score6/255)**2)+7152*((myapp.score5/255)**2)+2126*((myapp.score4/255)**2))).toFixed(1));
 document.getElementById("smean1").value=Number((Math.sqrt(722*((myapp.score3/255)**2)+7152*((myapp.score2/255)**2)+2126*((myapp.score1/255)**2))).toFixed(1));
-document.getElementById("ucount3").value=Number((Math.sqrt(myapp.pscore3*((myapp.score9/y)**2)+myapp.pscore2*((myapp.score8/y)**2)+myapp.pscore1*((myapp.score7/y)**2))).toFixed(1));
-document.getElementById("ucount2").value=Number((Math.sqrt(myapp.pscore3*((myapp.score6/y)**2)+myapp.pscore2*((myapp.score5/y)**2)+myapp.pscore1*((myapp.score4/y)**2))).toFixed(1));
-document.getElementById("ucount1").value=Number((Math.sqrt(myapp.pscore3*((myapp.score3/y)**2)+myapp.pscore2*((myapp.score2/y)**2)+myapp.pscore1*((myapp.score1/y)**2))).toFixed(1));
+document.getElementById("ucount3").value=myapp.ucount3=Number((Math.sqrt(myapp.pscore3*((myapp.score9/y)**2)+myapp.pscore2*((myapp.score8/y)**2)+myapp.pscore1*((myapp.score7/y)**2))).toFixed(1));
+document.getElementById("ucount2").value=myapp.ucount2=Number((Math.sqrt(myapp.pscore3*((myapp.score6/y)**2)+myapp.pscore2*((myapp.score5/y)**2)+myapp.pscore1*((myapp.score4/y)**2))).toFixed(1));
+document.getElementById("ucount1").value=myapp.ucount1=Number((Math.sqrt(myapp.pscore3*((myapp.score3/y)**2)+myapp.pscore2*((myapp.score2/y)**2)+myapp.pscore1*((myapp.score1/y)**2))).toFixed(1));
      myapp.tscore=myapp.pscore1+myapp.pscore2+myapp.pscore3
  if((myapp.tscore==100)==false){
 document.getElementById("pscore11").value=myapp.pscore1;
@@ -96,9 +96,9 @@ document.getElementById("pscore13").value=myapp.pscore3;};
         document.getElementById("tvly").value=dyst2/y;
         document.getElementById("lvry").value=dyst1/y;
         document.getElementById("tvry").value=dyst3/y;
-        document.getElementById("tc1").value=2;
-        document.getElementById("tc2").value=2;
-        document.getElementById("tc3").value=2;
+        document.getElementById("tc1").value=Math.sqrt((myapp.ucount3-myapp.ucount1)**2+(p2)**2);
+        document.getElementById("tc2").value=Math.sqrt((myapp.ucount2-myapp.ucount1)**2+(p1)**2);
+        document.getElementById("tc3").value=Math.sqrt((myapp.ucount3-myapp.ucount2)**2+(p3)**2);
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
