@@ -36,8 +36,8 @@
     weighs the colors by the weights under "Your values for percieved color brightness" (i.e., considers the color space a
     rectangular prism; i.e., considers all the colors of equal distance from each other only when they are of the same percieved
     brightness).
-    The values under Contrast, on the other hand, are based on the Euclidan norms for the differences in colors and the differences in brightness. Yes, I could have just used a mean of those two values.
-    
+    The values under Contrast, on the other hand, are the Euclidan norms for the differences in colors and the differences in brightness divided by the Euclidean norm with both those values set at 100. 
+    Yes, I could have just used the means of those two variables, instead, but where's the fun in that?
     The first number under Contrast uses the first value under Text v. Left/Text v. Right/Left v. Right as the input for the difference in colors; the second uses the second value.
   </p>
   <h3>Suggested Instructions</h3>
