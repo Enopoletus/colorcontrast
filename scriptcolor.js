@@ -152,7 +152,7 @@ svg.append("text")
       .style("text-anchor", "middle")
       .text(" ");
 window.addEventListener("load", frame);
-setTimeout(frame(), 1000);
+setTimeout(frame(), 100);
 window.addEventListener("input", frame);
 window.addEventListener("click", frame);
 function frame(){
