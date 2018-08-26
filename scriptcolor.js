@@ -151,9 +151,12 @@ svg.append("text")
       .attr("y", h*.75)
       .style("text-anchor", "middle")
       .text(" ");
-window.addEventListener("load", frame);
+window.addEventListener("load", time);
 window.addEventListener("input", frame);
 window.addEventListener("click", frame);
+function time(){
+        setTimeout(frame(), 100);
+}
 function frame(){
 svg.select("#rect1")                
      .style("fill", d3.rgb(myapp.score1, myapp.score2, myapp.score3));
