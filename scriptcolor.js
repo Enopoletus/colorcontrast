@@ -124,7 +124,7 @@ document.getElementById("pscore13").value=myapp.pscore3;};
 window.addEventListener("load", handler);
 //handler is where the d3 comes in
 function handler() {
-const w = (window.innerWidth*1);
+const w = (window.innerWidth*.9);
 const h = (window.innerHeight)/2;
 const svg = d3.select("#ten11")
             .append('svg')
