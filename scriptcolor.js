@@ -96,12 +96,12 @@ document.getElementById("pscore13").value=myapp.pscore3;};
         document.getElementById("tvly").value=dyst2/y;
         document.getElementById("lvry").value=dyst1/y;
         document.getElementById("tvry").value=dyst3/y;
-        document.getElementById("tc1").value=(myapp.ucount3-myapp.ucount1)*p2;
-        document.getElementById("tc2").value=(myapp.ucount3-myapp.ucount2)*p3;
-        document.getElementById("tc3").value=(myapp.ucount2-myapp.ucount1)*p1;
-        document.getElementById("tc1y").value=(myapp.ucount3-myapp.ucount1)*(dyst2/y);
-        document.getElementById("tc2y").value=(myapp.ucount3-myapp.ucount2)*(dyst3/y);
-        document.getElementById("tc3y").value=(myapp.ucount2-myapp.ucount1)*(dyst1/y);
+        document.getElementById("tc1").value=Math.abs(myapp.ucount3-myapp.ucount1)*p2;
+        document.getElementById("tc2").value=Math.abs(myapp.ucount3-myapp.ucount2)*p3;
+        document.getElementById("tc3").value=Math.abs(myapp.ucount2-myapp.ucount1)*p1;
+        document.getElementById("tc1y").value=Math.abs(myapp.ucount3-myapp.ucount1)*(dyst2/y);
+        document.getElementById("tc2y").value=Math.abs(myapp.ucount3-myapp.ucount2)*(dyst3/y);
+        document.getElementById("tc3y").value=Math.abs(myapp.ucount2-myapp.ucount1)*(dyst1/y);
 };
 window.addEventListener("load", n3ne);
 function n3ne(){
