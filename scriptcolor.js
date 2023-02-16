@@ -172,13 +172,13 @@ function createHTML() {
     var h = document.createElement("DIV");
     h.setAttribute("id", "myProgress");
     h.style.width="100%";
-    h.style.backgroundColor="#ddd";
+    h.style.backgroundColor=hsl(50 80% 40%);
     document.body.appendChild(h);
     var g = document.createElement("DIV");
     g.setAttribute("id", "myBar");
     g.style.width="0%";
     g.style.height="30px";
-    g.style.backgroundColor="#4CAF50";
+    g.style.backgroundColor= hsl(50 100% 50%);
     h.appendChild(g);
     var id = setInterval(frame, 100);
     function frame() {
