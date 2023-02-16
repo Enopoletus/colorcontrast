@@ -172,7 +172,7 @@ function createHTML() {
     var h = document.createElement("DIV");
     h.setAttribute("id", "myProgress");
     h.style.width="100%";
-    h.style.background= "linear-gradient(0deg, hsl(0 100% 50%) hsl(360 10% 50%))";
+    h.style.background= "linear-gradient(0deg, hsl(0 100% 50%), hsl(360 10% 50%))";
     document.body.appendChild(h);
     var g = document.createElement("DIV");
     g.setAttribute("id", "myBar");
