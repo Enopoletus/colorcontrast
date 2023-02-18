@@ -176,10 +176,15 @@ function createHTML() {
     document.body.appendChild(h);
     var g = document.createElement("DIV");
     g.setAttribute("id", "myBar");
-    const expression = "30"
+    const expression = "33.3"
     g.style.width=`${expression}%`;
     g.style.height="30px";
-    g.style.background = `hsl(${expression*3} 100% 50%)`;
+    g.style.background = `hsl(${expression*3.6} 100% 50%)`;
     h.appendChild(g);
-    var id = setInterval(frame, 100);
+    const gy = document.createElement("DIV");
+    gy.setAttribute("id", "myBar2");
+    const expression = "66.6"
+    gy.style.width=`${expression}%`;
+    gy.style.height="30px";
+    gy.style.background = `hsl(${expression*3.6} 100% 50%)`;
     });
