@@ -176,7 +176,8 @@ function createHTML() {
     document.body.appendChild(h);
     var g = document.createElement("DIV");
     g.setAttribute("id", "myBar");
-    g.style.width="30%";
+    const expression = "30%"
+    g.style.width="${expression}";
     g.style.height="30px";
     g.style.backgroundColor= "blue";
     h.appendChild(g);
