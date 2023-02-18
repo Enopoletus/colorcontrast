@@ -184,6 +184,6 @@ function createHTML() {
     const gy = document.createElement("DIV");
     gy.setAttribute("id", "myBar2");
     gy.style.width=`${expression*2}%`;
-    gy.style.background = `hsl(${expression*3.6} 100% 50%)`;
+    gy.style.background = `hsl(${expression*3.6*2} 100% 50%)`;
     h.appendChild(gy);
     });
