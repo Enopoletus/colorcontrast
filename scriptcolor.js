@@ -185,6 +185,6 @@ function createHTML() {
     gy.setAttribute("id", "myBar2");
     const expression = "66.6"
     gy.style.width=`${expression}%`;
-    gy.style.height="30px";
     gy.style.background = `hsl(${expression*3.6} 100% 50%)`;
+    h.appendChild(gy);
     });
