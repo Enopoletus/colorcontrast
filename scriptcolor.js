@@ -172,23 +172,13 @@ function createHTML() {
     var h = document.createElement("DIV");
     h.setAttribute("id", "myProgress");
     h.style.width="100%";
-    h.style.background= "linear-gradient(90deg, hsl(0 100% 50%), hsl(360 100% 50%))";
+    h.style.background= "red";
     document.body.appendChild(h);
     var g = document.createElement("DIV");
     g.setAttribute("id", "myBar");
-    g.style.width="0%";
+    g.style.width="30%";
     g.style.height="30px";
     g.style.backgroundColor= "blue";
     h.appendChild(g);
     var id = setInterval(frame, 100);
-    function frame() {
-    var secondsInADay = 24 * 60 * 60;
-    var now = new Date();
-    var hours = now.getHours() * 60 * 60;
-    var minutes = now.getMinutes() * 60;
-    var seconds = now.getSeconds();
-    var totalSeconds = hours + minutes + seconds;
-    var percentSeconds = 100 * totalSeconds/secondsInADay;
-      seconds++;
-      g.style.width = percentSeconds +'%'; }
     });
