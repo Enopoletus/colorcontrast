@@ -167,23 +167,3 @@ svg.select("#fifty")
      .text(String(myapp.name));
                 };
             };
-window.addEventListener("load",
-function createHTML() {
-    var h = document.createElement("DIV");
-    h.setAttribute("id", "myProgress");
-    h.style.width="100%";
-    h.style.background= "red";
-    document.body.appendChild(h);
-    var g = document.createElement("DIV");
-    g.setAttribute("id", "myBar");
-    const expression = "33.3"
-    g.style.width=`${expression}%`;
-    g.style.height="30px";
-    g.style.background = `hsl(${expression*3.6} 100% 50%)`;
-    h.appendChild(g);
-    const gy = document.createElement("DIV");
-    gy.setAttribute("id", "myBar2");
-    gy.style.width=`${expression*2}%`;
-    gy.style.background = `hsl(${expression*3.6*2} 100% 50%)`;
-    h.appendChild(gy);
-    });
