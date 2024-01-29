@@ -169,24 +169,51 @@ svg.select("#fifty")
             };
 window.addEventListener("load", draw);
 function draw() {
-const canvas = document.getElementById('gradientCanvas');
-const ctx = canvas.getContext('2d');
-const widthone = window.innerWidth;
-const heightone = window.innerHeight;
-canvas.width = widthone;
-canvas.height = heightone;
-  const imageData = ctx.createImageData(widthone, heightone);
-  for (let y = 0; y < heightone; y++) {
-    for (let x = 0; x < widthone; x++) {
-      const r = Math.floor((x / widthone) * 255);
-      const g = Math.floor((y / heightone) * 255);
-      const b = Math.floor((x / widthone + y / heightone) * 255);
-      const index = (y * widthone + x) * 4;
-      imageData.data[index] = r;
-      imageData.data[index + 1] = g;
-      imageData.data[index + 2] = b;
-      imageData.data[index + 3] = 255; // Alpha
-    }
-  }
-  ctx.putImageData(imageData, 0, 0);
+// Get the canvas element and its 2d context
+const canvas = document.getElementById("gradientCanvas");
+const ctx = canvas.getContext("2d");
+// Define the rainbow gradient using HSL
+const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+// Set up the HSL values
+const hue = 0;
+const saturation = 100;
+const lightness = 50;
+// Add color stops for the rainbow dynamically
+for (let i = 0; i <= 360; i++) {
+    // Convert HSL to RGB
+    const rgbColor = hslToRgb(hue / 360, saturation / 100, lightness / 100);
+    // Add color stop
+    gradient.addColorStop(i / 360, 'rgb(' + rgbColor.join(',') + ')');
+    // Increment the hue for the next color
+    hue++;
 }
+// Fill the canvas with the rainbow gradient
+ctx.fillStyle = gradient;
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+// Function to convert HSL to RGB
+function hslToRgb(h, s, l) {
+    var r, g, b;
+
+    if (s === 0) {
+        r = g = b = l; // achromatic
+    } else {
+        var hueToRgb = function hueToRgb(p, q, t) {
+            if (t < 0) t += 1;
+            if (t > 1) t -= 1;
+            if (t < 1 / 6) return p + (q - p) * 6 * t;
+            if (t < 1 / 2) return q;
+            if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+            return p;
+        };
+
+        var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+        var p = 2 * l - q;
+
+        r = hueToRgb(p, q, h + 1 / 3);
+        g = hueToRgb(p, q, h);
+        b = hueToRgb(p, q, h - 1 / 3);
+    }
+
+    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+ }
+};
