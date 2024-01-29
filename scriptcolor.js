@@ -168,13 +168,13 @@ svg.select("#fifty")
                 };
             };
 window.addEventListener("load", draw);
+function draw() {
 const canvas = document.getElementById('gradientCanvas');
 const ctx = canvas.getContext('2d');
 const widthone = window.innerWidth;
 const heightone = window.innerHeight;
 canvas.width = widthone;
 canvas.height = heightone;
-function draw() {
   const imageData = ctx.createImageData(width, height);
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
