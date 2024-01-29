@@ -167,3 +167,27 @@ svg.select("#fifty")
      .text(String(myapp.name));
                 };
             };
+window.addEventListener("load", draw);
+const canvas = document.getElementById('gradientCanvas');
+const ctx = canvas.getContext('2d');
+const widthone = window.innerWidth;
+const heightone = window.innerHeight;
+canvas.width = widthone;
+canvas.height = heightone;
+function draw() {
+  const imageData = ctx.createImageData(width, height);
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const r = Math.floor((x / width) * 255);
+      const g = Math.floor((y / height) * 255);
+      const b = Math.floor((x / width + y / height) * 255);
+      const index = (y * width + x) * 4;
+      imageData.data[index] = r;
+      imageData.data[index + 1] = g;
+      imageData.data[index + 2] = b;
+      imageData.data[index + 3] = 255; // Alpha
+    }
+  }
+
+  ctx.putImageData(imageData, 0, 0);
+}
