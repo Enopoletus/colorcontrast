@@ -175,9 +175,9 @@ const ctx = canvas.getContext("2d");
 // Define the rainbow gradient using HSL
 const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
 // Set up the HSL values
-const hue = 0;
-const saturation = 100;
-const lightness = 50;
+let hue = 0;
+let saturation = 100;
+let lightness = 50;
 // Add color stops for the rainbow dynamically
 for (let i = 0; i <= 360; i++) {
     // Convert HSL to RGB
