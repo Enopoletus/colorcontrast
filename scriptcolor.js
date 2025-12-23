@@ -113,7 +113,7 @@ function egality(){
                  [1, 1, 1]];
         const aq=[0, 0, 100]
         myapp.qy=math.lusolve(az, aq);
- for(i of myapp.qy){if(i<=0){alert('Stop fucking with the equals button');};
+ for(i of myapp.qy){if(i<=0){alert('Stop abusing the equals button');};
  myapp.pscore1=parseFloat(myapp.qy[0]).toFixed(1);
  myapp.pscore2=parseFloat(myapp.qy[1]).toFixed(1);
  myapp.pscore3=parseFloat(myapp.qy[2]).toFixed(1);
